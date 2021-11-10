@@ -1,0 +1,208 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>ECE5 Lab 4</title> 
+    <meta name="description" content="sketchbook">
+    <meta name="author" content="sketchbook">
+    <link rel="stylesheet" href="style.css"> <!-- this imports the CSS file. do not remove -->
+  </head>
+
+  <body>
+    
+<!--   *********************  HEADING START *********************   --> 
+    
+    <div class="heading">
+      <h1>ECE 5 - Creating Website Tutorials</h1> <!-- h1 is heading 1 -->
+    </div>
+    
+<!--   *********************  HEADING END *********************   --> 
+        
+    <section class="main">
+     
+<!----------------------------------------  BUTTON 1 ---------------------------------------->
+      
+      <div>
+        <button type='button' onclick="toggleText1()" class="btn">Intro to CSS HTML & JS</button>
+      </div> <!--end of div class center -->
+      
+      <div class="interactive" id='interactive1' style='display: none'>
+        <div class='box1'>
+          <br>
+          <iframe class='center2' width="560" height="315" src="https://www.youtube.com/embed/7n9LdON5i-Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div> 
+      
+<!----------------------------------------  BUTTON 2 ---------------------------------------->
+        
+      <div>
+        <button type='button' onclick="toggleText2()" class="btn">Github guide</button>
+      </div> <!--end of div class center -->
+      
+      <div class="interactive" id='interactive2' style='display: none'>
+        <div class='box1'>
+          <br>
+          <iframe class='center2'  width="560" height="315" src="https://www.youtube.com/embed/4yCZm18tDeM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div> 
+      
+<!----------------------------------------  BUTTON 3 ---------------------------------------->
+      
+     <div>
+        <button type='button' onclick="toggleText3()" class="btn">Netlify</button>
+      </div> <!--end of div class center -->
+      
+      <div class="interactive" id='interactive3' style='display: none'>
+        <div class='box1'>
+          <br>
+          <iframe class='center2' width="560" height="315" src="https://www.youtube.com/embed/s9UBeqJ3Ozw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div> 
+      
+<!----------------------------------------  BUTTON 4 ----------------------------------------> 
+      
+    <div>
+        <button type='button' onclick="toggleText4()" class="btn">Editing text</button>
+      </div> <!--end of div class center -->
+            
+      <div class="interactive" id='interactive4' style='display: none'>
+        <div class='box1'>
+          <br>
+          <iframe class='center2' width="560" height="315" src="https://www.youtube.com/embed/ZXBOhGrNu68" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div> 
+      
+<!----------------------------------------  BUTTON 5 ---------------------------------------->
+      
+     <div>
+        <button type='button' onclick="toggleText5()" class="btn">Inserting images</button>
+      </div> <!--end of div class center -->
+            
+      <div class="interactive" id='interactive5' style='display: none'>
+         <div class='box1'>
+          <br>
+          <iframe class='center2' width="560" height="315" src="https://www.youtube.com/embed/dz8IWTMovCo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div> 
+      
+<!----------------------------------------  BUTTON 6 ---------------------------------------->
+      
+     <div>
+        <button type='button' onclick="toggleText6()" class="btn">Inserting videos</button>
+      </div> <!--end of div class center -->
+      
+      <div class="interactive" id='interactive6' style='display: none'>
+        <div class='box1'>
+          <br>
+          <iframe class='center2' width="560" height="315" src="https://www.youtube.com/embed/Ge2AwcMpacY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div> 
+      
+<!----------------------------------------  BUTTON 7 ---------------------------------------->
+      
+     <div>
+        <button type='button' onclick="toggleText7()" class="btn">Creating buttons</button>
+      </div> <!--end of div class center -->
+      
+      <div class="interactive" id='interactive7' style='display: none'>
+        <div class='box1'>
+          <br>
+          <iframe class='center2' width="560" height="315" src="https://www.youtube.com/embed/DxNin0VXWw4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div> 
+      
+<!--   *********************  BUTTONS END *********************   --> 
+      
+<!--   ////////////////////////////////////////////////////////////////////////////////////////////////   --> 
+      
+    </section>
+    <!-- This is the end of our section -->
+
+  </body>
+  
+<!--   ////////////////////////////////////////////////////////////////////////////////////////////////   --> 
+
+<!--   *********************  JAVASCRIPT CODE *********************   -->
+  
+  <script>
+    function toggleText1(text) {
+      var text = document.getElementById("interactive1");
+      if (text.style.display === "none") {
+        text.style.display = "block";
+      } else {
+        text.style.display = "none";
+      }
+    }
+
+
+    function toggleText2(text) {
+      var text = document.getElementById("interactive2");
+      if (text.style.display === "none") {
+        text.style.display = "block";
+      } else {
+        text.style.display = "none";
+      }
+    }
+
+    function toggleText3(text) {
+      var text = document.getElementById("interactive3");
+      if (text.style.display === "none") {
+        text.style.display = "block";
+      } else {
+        text.style.display = "none";
+      }
+    }
+
+    function toggleText4(text) {
+      var text = document.getElementById("interactive4");
+      if (text.style.display === "none") {
+        text.style.display = "block";
+      } else {
+        text.style.display = "none";
+      }
+    }
+    
+    function toggleText5(text) {
+      var text = document.getElementById("interactive5");
+      if (text.style.display === "none") {
+        text.style.display = "block";
+      } else {
+        text.style.display = "none";
+      }
+    }
+    
+    function toggleText6(text) {
+      var text = document.getElementById("interactive6");
+      if (text.style.display === "none") {
+        text.style.display = "block";
+      } else {
+        text.style.display = "none";
+      }
+    }
+    
+    function toggleText7(text) {
+      var text = document.getElementById("interactive7");
+      if (text.style.display === "none") {
+        text.style.display = "block";
+      } else {
+        text.style.display = "none";
+      }
+    }
+    
+    function toggleText8(text) {
+      var text = document.getElementById("interactive8");
+      if (text.style.display === "none") {
+        text.style.display = "block";
+      } else {
+        text.style.display = "none";
+      }
+    }
+
+  </script>
+
+</html>
+
+
+<!--add poster (outside) and video tabs / tab of team photo, tab of team logo-->
